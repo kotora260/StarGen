@@ -10,11 +10,15 @@
 
 ## 詳細
 ### datasets
-各時刻におけるガス雲のデータ.　
+各時刻におけるガス雲のデータ.  
 例えば400.npzには,0.5702Myrにおけるガス質量が視線速度×位置×位置の三次元空間に格納されている.
 
 ### media
 解析の結果得られた図をまとめている.
+
+### paper
+論文等をTypstで作成するためのフォルダ.  
+typファイルとpdfファイルをまとめている.
 
 ### dendro2D
 ガス質量を視線速度方向に積分した積分強度図に対してDendrogramによる解析を行うためのNotebook.  
@@ -38,6 +42,5 @@ dendro3Dの解析結果から図を作成するためのNotebook.
 [astrodendroドキュメント](https://dendrograms.readthedocs.io/en/stable/)
 
 ## 著者
-筑波大学宇宙観測研究室所属.  
-[研究室ウェブサイト](https://astro.px.tsukuba.ac.jp)  
+B4.北海道出身.  
 [著者Instagram](https://www.instagram.com/melan_cozmo/)
