@@ -38,4 +38,6 @@ dendro3Dの解析結果から図を作成するためのNotebook.
 [astrodendroドキュメント](https://dendrograms.readthedocs.io/en/stable/)
 
 ## 著者
-筑波大学宇宙観測研究室所属  
+筑波大学宇宙観測研究室所属.  
+[研究室ウェブサイト](https://astro.px.tsukuba.ac.jp)  
+[著者Instagram](https://www.instagram.com/melan_cozmo/)
