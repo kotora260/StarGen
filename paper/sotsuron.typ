@@ -127,6 +127,8 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 = 解析方法
 
+== 概要
+
 本研究では Dendrogram を用いて構造の同定を行っていく.
 
 Dendrogram は, 多次元のデータセットにおける階層構造を樹形図上に分類するアルゴリズムである. それぞれの階層は, 内部に構造を持たない最小構造であるリーフ(leaf)と, 内部に構造を持つブランチ(branch)に分類される. また最も上位の構造をトランク(trunk)と呼ぶ. 詳細は”Astronomical Dendrograms in Python”(https://dendrograms.readthedocs.io/en/stable/) に記載されている.
@@ -138,11 +140,67 @@ Dendrogram は, 多次元のデータセットにおける階層構造を樹形�
   caption: [Dendrogram による階層構造],
 ) <img:dendrogram_example>\
 
+== アルゴリズム詳細
+
+Dendrogramのアルゴリズムにおいては, 最大値を持つピクセルから分類が始まり, 徐々に他のピクセルが構造に加えられていく. 
+
+以下の図は,1変数のデータを例にとってDendrogramのアルゴリズムについて図示したものである.
+
+#img(
+  image("dendrogram_step1.png", width: 70%),
+  caption: [],
+) <img:dendrogram_step1>
+
+#img(
+  image("dendrogram_step2.png", width: 70%),
+  caption: [],
+) <img:dendrogram_step2>
+
+#img(
+  image("dendrogram_step3.png", width: 70%),
+  caption: [],
+) <img:dendrogram_step3>
+
+#img(
+  image("dendrogram_step4.png", width: 70%),
+  caption: [],
+) <img:dendrogram_step4>\
+
+まずアルゴリズムはデータの最大値を検出する(@img:dendrogram_step1). その後アルゴリズムはcurrent valueを最大値から降下させ, その最大値をピークに持つリーフを生成する. current valueが二つ目のピークに到達した段階で, その値をピークとして, 最初に生成していたリーフとは独立した二つ目のリーフが生成される(@img:dendrogram_step2). current valueが降下を続けると二つのピークが一つの山に結合されるが, それに対応して二つのリーフも一つのブランチに結合される(@img:dendrogram_step3). 同様の手順が繰り返され, 結局今回の例ではデータは一つのツリーに結合される(@img:dendrogram_step4).
+
+== パラメータ
+
+デンドログラムを実行する際は, 以下の3つのパラメータを設定する必要がある.
+
+- min_value: アルゴリズム実行の際にcurrent valueが到達できる最小の値. これより小さい値を持つピクセルは考慮されない.
+- min_delta: current valueに加算される値. この値よりも小さいピークは独立したリーフとはみなされない.
+- min_npix: 独立したリーフを生成する際に必要なピクセル数の最小値.
+
+#img(
+  image("dendrogram_mindelta1.png", width: 70%),
+  caption: [],
+) <img:dendrogram_mindelta1>
+
+#img(
+  image("dendrogram_mindelta2.png", width: 70%),
+  caption: [],
+) <img:dendrogram_mindelta2>
+
+
+@img:dendrogram_mindelta1 ,@img:dendrogram_mindelta2 において, current valueがmin_valueよりも下に降下することはない. また@img:dendrogram_mindelta1 では, まだピークは加算されたmin_deltaの幅よりも小さいため, リーフとはみなされていない. その後current valueが降下を続け@img:dendrogram_mindelta2 のようになると, ピークがmin_deltaの幅より大きくなり, ピークはリーフとみなされるようになる.
+
+
 = 解析結果
 
 == 積分強度図の解析結果
 
-まず, 積分強度図に対して Dendrogram を実行した. 以下に同定された構造を示す. 赤の線がリーフの輪郭, 黄色の線がブランチの輪郭を表している.
+まず, 積分強度図に対してDendrogramを実行した. パラメータは全時刻に対して同様に以下のように設定した.
+
+- min_value = 400
+- min_delta = 120
+- min_npix = 15
+
+以下に同定された構造を示す. 赤の線がリーフの輪郭, 黄色の線がブランチの輪郭を表している.
 
 #img(
   image("c:media/dendro_400_contour.png", width: 70%),
@@ -166,7 +224,13 @@ Dendrogram は, 多次元のデータセットにおける階層構造を樹形�
 
 == 三次元散布図の解析結果
 
-続いて三次元散布図において Dendrogram を実行した. 以下に同定された構造を示す. 赤の表面がリーフの輪郭, 黄色の表面がブランチの輪郭を表している.
+続いて三次元散布図においてDendrogramを実行した. パラメータは全時刻に対して同様に以下のように設定した.
+
+- min_value = 90
+- min_delta = 20
+- min_npix = 50
+
+以下に同定された構造を示す. 赤の表面がリーフの輪郭, 黄色の表面がブランチの輪郭を表している.
 
 #img(
   image("c:media/dendro3D_400_contour.png", width: 70%),
