@@ -556,7 +556,7 @@
     #text(
       size: 16pt,
     )[
-      指導教員: #mentor #mentor-post
+      指導教員 #mentor #mentor-post
     ]
     #v(40pt)
     #text(
