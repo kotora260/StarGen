@@ -148,22 +148,22 @@ Dendrogramのアルゴリズムにおいては, 最大値を持つピクセル�
 
 #img(
   image("dendrogram_step1.png", width: 70%),
-  caption: [],
+  caption: [Dendrogramによる解析開始],
 ) <img:dendrogram_step1>
 
 #img(
   image("dendrogram_step2.png", width: 70%),
-  caption: [],
+  caption: [リーフの生成],
 ) <img:dendrogram_step2>
 
 #img(
   image("dendrogram_step3.png", width: 70%),
-  caption: [],
+  caption: [リーフの結合],
 ) <img:dendrogram_step3>
 
 #img(
   image("dendrogram_step4.png", width: 70%),
-  caption: [],
+  caption: [解析完了],
 ) <img:dendrogram_step4>\
 
 まずアルゴリズムはデータの最大値を検出する(@img:dendrogram_step1). その後アルゴリズムはcurrent valueを最大値から降下させ, その最大値をピークに持つリーフを生成する. current valueが二つ目のピークに到達した段階で, その値をピークとして, 最初に生成していたリーフとは独立した二つ目のリーフが生成される(@img:dendrogram_step2). current valueが降下を続けると二つのピークが一つの山に結合されるが, それに対応して二つのリーフも一つのブランチに結合される(@img:dendrogram_step3). 同様の手順が繰り返され, 結局今回の例ではデータは一つのツリーに結合される(@img:dendrogram_step4).
@@ -178,12 +178,12 @@ Dendrogramのアルゴリズムにおいては, 最大値を持つピクセル�
 
 #img(
   image("dendrogram_mindelta1.png", width: 70%),
-  caption: [],
+  caption: [パラメータ詳細：この段階ではまだリーフは生成されていない],
 ) <img:dendrogram_mindelta1>
 
 #img(
   image("dendrogram_mindelta2.png", width: 70%),
-  caption: [],
+  caption: [パラメータ詳細：ピークの大きさがmin_deltaを超えるとリーフ生成],
 ) <img:dendrogram_mindelta2>
 
 
