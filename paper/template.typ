@@ -562,7 +562,7 @@
     #text(
       size: 16pt,
     )[
-      #date.at(0) 年 #date.at(1) 月 #date.at(2) 日 提出
+      #date.at(0) 年 #date.at(1) 月 #date.at(2) 日 //提出
     ]
     #pagebreak()
   ]
