@@ -1,5 +1,6 @@
 #import "@preview/physica:0.9.0": *
 #import "@preview/metro:0.1.0": *
+// solar massは数式で、pcはテキストで入力
 #import "./template.typ": *
 
 #show: master_thesis.with(
@@ -79,3 +80,11 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $
 以下にそれぞれの時点における三次元散布図を示す.
 
 なおガスの構造がわかりやすいよう, プロットは質量が 40 $M_⊙$ 以上のボクセルに対して行った.
+
+= 解析方法
+
+本研究では Dendrogram を用いて構造の同定を行っていく.
+
+Dendrogram は, 多次元のデータセットにおける階層構造を樹形図上に分類するアルゴリズムである. それぞれの階層は, 内部に構造を持たない最小構造であるリーフ(leaf)と, 内部に構造を持つブランチ(branch)に分類される. また最も上位の構造をトランク(trunk)と呼ぶ. 詳細は”Astronomical Dendrograms in Python”(https://dendrograms.readthedocs.io/en/stable/) に記載されている.
+
+解析対象のデータにおいては, ガスの質量が大きい部分ほどより多くの内部構造を持つ.
