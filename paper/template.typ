@@ -223,7 +223,7 @@
     abstract_ja
     par(first-line-indent: 0em)[
       #text(weight: "bold", size: 12pt)[
-      キーワード:
+      //キーワード:
       #keywords_ja.join(", ")
       ]
     ]
@@ -622,8 +622,8 @@
   toc()
   pagebreak()
   toc_img()
-  pagebreak()
-  toc_tbl()
+  //pagebreak()
+  //toc_tbl()
 
   set page(
     footer: [
