@@ -212,7 +212,7 @@
   if abstract_ja != [] {
     show <_ja_abstract_>: {
       align(center)[
-        #text(size: 20pt, "概要")
+        #text(size: 20pt, font: "MS Gothic", "概要")
       ]
     }
     [= 概要 <_ja_abstract_>]
@@ -263,7 +263,7 @@
 // Definition of chapter outline
 #let toc() = {
   align(left)[
-    #text(size: 20pt, weight: "bold")[
+    #text(size: 20pt, font:"MS Gothic", weight: "bold")[
       #v(30pt)
       目次
       #v(30pt)
@@ -320,7 +320,7 @@
 // Definition of image outline
 #let toc_img() = {
   align(left)[
-    #text(size: 20pt, weight: "bold")[
+    #text(size: 20pt, font: "MS Gothic", weight: "bold")[
       #v(30pt)
       図目次
       #v(30pt)
@@ -542,7 +542,7 @@
     ]
     #v(40pt)
     #text(
-      size: 22pt,
+      size: 22pt, font: "MS Gothic"
     )[
       #title
     ]
@@ -592,26 +592,26 @@
     set text(weight: "bold", size: 20pt)
     set block(spacing: 1.5em)
     let pre_chapt = if it.numbering != none {
-          text()[
+          text(font: "MS Gothic")[
             #v(50pt)
             第
             #numbering(it.numbering, ..counter(heading).at(it.location()))章
           ] 
         } else {none}
-    text()[
+    text(font: "MS Gothic")[
       #pre_chapt \
       #it.body \
       #v(50pt)
     ]
   }
   show heading.where(level: 2): it => {
-    set text(weight: "bold", size: 16pt)
+    set text(font: "MS Gothic", weight: "bold", size: 16pt)
     set block(above: 1.5em, below: 1.5em)
     it
   }
 
   show heading: it => {
-    set text(weight: "bold", size: 14pt)
+    set text(font: "MS Gothic", weight: "bold", size: 14pt)
     set block(above: 1.5em, below: 1.5em)
     it
   } + empty_par()
