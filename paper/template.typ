@@ -514,10 +514,10 @@
   // Set the body font. TeX Gyre Pagella is a free alternative
   // to Palatino.
   set text(font: (
-    "Nimbus Roman",
+    // "Nimbus Roman",
     // "Hiragino Mincho ProN",
-    // "MS Mincho",
-    "Noto Serif CJK JP",
+     "MS Mincho",
+     "Noto Serif CJK JP",
     ), size: 12pt)
 
   // Configure the page properties.
