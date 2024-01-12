@@ -595,8 +595,7 @@
           text()[
             #v(50pt)
             第
-            #numbering(it.numbering, ..counter(heading).at(it.location()))
-            章
+            #numbering(it.numbering, ..counter(heading).at(it.location()))章
           ] 
         } else {none}
     text()[
