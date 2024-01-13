@@ -151,7 +151,7 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 = 解析方法
 
-== 概要
+== Dendrogram概要
 
 本研究では, Dendrogramを用いて構造の同定を行っていく.
 
