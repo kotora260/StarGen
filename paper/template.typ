@@ -263,7 +263,7 @@
 // Definition of chapter outline
 #let toc() = {
   align(left)[
-    #text(size: 20pt, font:"MS Gothic", weight: "bold")[
+    #text(size: 20pt, font:"IPAexGothic", weight: "bold")[
       #v(30pt)
       目次
       #v(30pt)
@@ -320,7 +320,7 @@
 // Definition of image outline
 #let toc_img() = {
   align(left)[
-    #text(size: 20pt, font: "MS Gothic", weight: "bold")[
+    #text(size: 20pt, font: "IPAexGothic", weight: "bold")[
       #v(30pt)
       図目次
       #v(30pt)
@@ -481,7 +481,7 @@
   show figure: it => {
     set align(center)
     if it.kind == "image" {
-      set text(size: 12pt)
+      set text(font: "IPAexGothic",size: 9pt)
       it.body
       it.supplement
       " " + it.counter.display(it.numbering)
@@ -513,12 +513,7 @@
 
   // Set the body font. TeX Gyre Pagella is a free alternative
   // to Palatino.
-  set text(font: (
-    // "Nimbus Roman",
-    // "Hiragino Mincho ProN",
-     "MS Mincho",
-     "Noto Serif CJK JP",
-    ), size: 12pt)
+  set text(font: "IPAexMincho", size: 10.5pt)
 
   // Configure the page properties.
   set page(
@@ -542,7 +537,7 @@
     ]
     #v(40pt)
     #text(
-      size: 22pt, font: "MS Gothic"
+      size: 22pt, font: "IPAexGothic"
     )[
       #title
     ]
@@ -592,26 +587,26 @@
     set text(weight: "bold", size: 20pt)
     set block(spacing: 1.5em)
     let pre_chapt = if it.numbering != none {
-          text(font: "MS Gothic")[
+          text(font: "IPAexGothic")[
             #v(50pt)
             第
             #numbering(it.numbering, ..counter(heading).at(it.location()))章
           ] 
         } else {none}
-    text(font: "MS Gothic")[
+    text(font: "IPAexGothic")[
       #pre_chapt \
       #it.body \
       #v(50pt)
     ]
   }
   show heading.where(level: 2): it => {
-    set text(font: "MS Gothic", weight: "bold", size: 16pt)
+    set text(font: "IPAexGothic", weight: "bold", size: 16pt)
     set block(above: 1.5em, below: 1.5em)
     it
   }
 
   show heading: it => {
-    set text(font: "MS Gothic", weight: "bold", size: 14pt)
+    set text(font: "IPAexGothic", weight: "bold", size: 14pt)
     set block(above: 1.5em, below: 1.5em)
     it
   } + empty_par()
