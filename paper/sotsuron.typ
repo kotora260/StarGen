@@ -66,12 +66,12 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 例えばMiura et al.(2012)では,近傍銀河M33のCO観測によって71個の巨大分子雲(GMC)を同定し,それらを進化段階に応じて4つのカテゴリーに分類している.ただしこの進化段階のカテゴリーはGMCと,M33内の若い星の集団(YSG),HII領域の,観測時点での位置関係によって解釈されている.例として,大規模な星形成が行われる前の段階であるType Aに属するM33 GMC-60を@img:gmc_typea に,現在大規模な星形成が行われている段階であるType Cカテゴリーに属するM33 GMC-1を@img:gmc_typec に示す.GMC-60と比べ,GMC-1はより階層的なCO積分強度図を持っていることがわかる. 
 
 #img(
-  image("gmc_typea.png", width: 80%),
+  image("gmc_typea.png", width: 70%),
   caption: [Type Aカテゴリーに属するM33 GMC-60.(a)CO(J = 3-2),(b)CO(J = 1-0)積分強度図,(c)CO(J = 3-2)/CO(J = 1-0)比,(d)H$alpha$のマップを示す.色付きのコントアは若い星の面密度を表す.(Miura et al.,2012,p.18)],
 ) <img:gmc_typea>
 
 #img(
-  image("gmc_typec.png", width: 80%),
+  image("gmc_typec.png", width: 70%),
   caption: [Type Cカテゴリーに属するM33 GMC-1.(Miura et al.,2012,p.20)],
 ) <img:gmc_typec>\
 
@@ -93,7 +93,7 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 == シミュレーション概要
 
-本研究で解析の対象としたのは,筑波大学宇宙理論研究室の福島肇助教により行われた,SFUMATOを用いて計算された自己重力流体シミュレーションである.SFUMATOは自己重力MHD問題を解くための天体物理シミュレーションコードである.コードの詳細は”Sfumato AMR”(https://redmagic.i.hosei.ac.jp/research/sfumato/)に記載されている.
+本研究で解析の対象としたのは,筑波大学宇宙理論研究室の福島肇助教により行われた,SFUMATOを用いて計算された自己重力流体シミュレーションである.SFUMATOは自己重力MHD問題を解くための天体物理シミュレーションコードである.コードの詳細は"Sfumato AMR"(https://redmagic.i.hosei.ac.jp/research/sfumato/)に記載されている.
 
 シミュレーションは磁場のない一様な分子雲を想定して雲質量#num(1,e:6,print-unity-mantissa:false) $M_⊙$,面密度$350$ $M_⊙$ $"pc"^(-2)$,半径$30$ $"pc"$の一様な流体の球を自己重力により変化させた.
 
@@ -155,7 +155,7 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 本研究ではDendrogramを用いて構造の同定を行っていく.
 
-Dendrogramは,多次元のデータセットにおける階層構造を樹形図上に分類するアルゴリズムである.それぞれの階層は,内部に構造を持たない最小構造であるリーフ(leaf)と,内部に構造を持つブランチ(branch)に分類される.また最も上位の構造をトランク(trunk)と呼ぶ.詳細は”Astronomical Dendrograms in Python”(https://dendrograms.readthedocs.io/en/stable/)に記載されている.
+Dendrogramは,多次元のデータセットにおける階層構造を樹形図上に分類するアルゴリズムである.それぞれの階層は,内部に構造を持たない最小構造であるリーフ(leaf)と,内部に構造を持つブランチ(branch)に分類される.また最も上位の構造をトランク(trunk)と呼ぶ.詳細は"Astronomical Dendrograms in Python"(https://dendrograms.readthedocs.io/en/stable/)に記載されている.
 
 解析対象のデータにおいては,ガスの質量が大きい部分ほどより多くの内部構造を持つ.
 
@@ -425,5 +425,20 @@ mass functionから,時間発展に伴い質量の大きい部分と小さい部
 
 = 謝辞
 
-#bibliography("references.bib", title: "参考文献")
+= 参考文献
 
+Rie, E. Miura, et al. 2012, ApJ, 761, 37
+
+Hiroshi, K., et al. 2021, ApJ, 912, 66
+
+Federrath, C., et al. 2012, ApJ, 761, 156
+
+Kim, J. G., et al. 2018, ApJ, 859, 68
+
+Fukushima, H., et al. 2020, MNRAS, 497, 3830
+
+天文学辞典(公益社団法人 日本天文学会), https://astro-dic.jp
+
+Sfumato AMR, https://redmagic.i.hosei.ac.jp/research/sfumato/
+
+Astronomical Dendrograms in Python, https://dendrograms.readthedocs.io/en/stable/
