@@ -212,7 +212,7 @@
   if abstract_ja != [] {
     show <_ja_abstract_>: {
       align(center)[
-        #text(size: 20pt, font: "MS Gothic", "概要")
+        #text(size: 20pt, font: "IPAexGothic", "概要")
       ]
     }
     [= 概要 <_ja_abstract_>]
@@ -511,9 +511,11 @@
   // Set the document's metadata.
   set document(title: title, author: author)
 
-  // Set the body font. TeX Gyre Pagella is a free alternative
-  // to Palatino.
-  set text(font: "IPAexMincho", size: 10.5pt)
+  // Set the body font.
+  // 和文:IPAex明朝, 英文,数式:New Computer Modern Math
+  set text(font: ("New Computer Modern Math",
+                 "IPAexMincho"), 
+           size: 10.5pt)
 
   // Configure the page properties.
   set page(
