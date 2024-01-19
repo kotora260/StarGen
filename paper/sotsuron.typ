@@ -101,7 +101,7 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 == データ詳細
 
-本研究では，先述のシミュレーションのうち，それぞれ$0.57$ Myr，$1.1$ Myr，$1.7$ Myr，$2.2$ Myrの時点における質量のデータ(それぞれm400，m1000，m2200，m2800とラベリングしている)を福島助教に提供していただき，解析した．これらのデータは観測データとの比較が容易な，視線速度，位置，位置からなる三次元データである．$40$×$65$×$65$個のボクセルの中に質量が数値として格納されている．また1つのボクセルは#qty(0.65,"km/s")×$1.4$ $"pc"$×$1.4$ $"pc"$の三次元空間に相当する．
+本研究では，先述のシミュレーションのうち，それぞれ$0.57$ Myr，$1.1$ Myr，$1.7$ Myr，$2.2$ Myrの時点における質量のデータを福島助教に提供していただき，解析した．これらのデータは観測データとの比較が容易な，視線速度，位置，位置からなる三次元データである．$40$×$65$×$65$個のボクセルの中に質量が数値として格納されている．また1つのボクセルは#qty(0.65,"km/s")×$1.4$ $"pc"$×$1.4$ $"pc"$の三次元空間に相当する．
 
 解析はこのデータを視線速度方向に積分した積分強度図と，もとのデータをそのまま三次元空間にプロットした散布図に対して行った．
 
@@ -109,44 +109,44 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 #img(
   image("c:media/int_map_400.png", width: 70%),
-  caption: [m400の積分強度図],
+  caption: [0.57 Myrの積分強度図],
 ) <img:int_map_400>
 
 #img(
   image("c:media/int_map_1000.png", width: 70%),
-  caption: [m1000の積分強度図],
+  caption: [1.1 Myrの積分強度図],
 ) <img:int_map_1000>
 
 #img(
   image("c:media/int_map_2200.png", width: 70%),
-  caption: [m2200の積分強度図],
+  caption: [1.7 Myrの積分強度図],
 ) <img:int_map_2200>
 
 #img(
   image("c:media/int_map_2800.png", width: 70%),
-  caption: [m2800の積分強度図],
+  caption: [2.2 Myrの積分強度図],
 ) <img:int_map_2800>\
 
 @img:3Dmap_400 から@img:3Dmap_2800 にそれぞれの時点における三次元散布図を示す．なおガスの構造がわかりやすいよう，プロットは質量が$40$ $M_⊙$以上のボクセルに対して行った．
 
 #img(
   image("c:media/3Dmap_400.png", width: 70%),
-  caption: [m400の三次元散布図],
+  caption: [0.57 Myrの三次元散布図],
 ) <img:3Dmap_400>
 
 #img(
   image("c:media/3Dmap_1000.png", width: 70%),
-  caption: [m1000の三次元散布図],
+  caption: [1.1 Myrの三次元散布図],
 ) <img:3Dmap_1000>
 
 #img(
   image("c:media/3Dmap_2200.png", width: 70%),
-  caption: [m2200の三次元散布図],
+  caption: [1.7 Myrの三次元散布図],
 ) <img:3Dmap_2200>
 
 #img(
   image("c:media/3Dmap_2800.png", width: 70%),
-  caption: [m2800の三次元散布図],
+  caption: [2.2 Myrの三次元散布図],
 ) <img:3Dmap_2800>\
 
 = 解析方法
@@ -224,22 +224,22 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
 
 #img(
   image("c:media/dendro_400_contour.png", width: 70%),
-  caption: [m400の積分強度図の解析結果],
+  caption: [0.57 Myrの積分強度図の解析結果],
 ) <img:dendro_400_contour>
 
 #img(
   image("c:media/dendro_1000_contour.png", width: 70%),
-  caption: [m1000の積分強度図の解析結果],
+  caption: [1.1 Myrの積分強度図の解析結果],
 ) <img:dendro_1000_contour>
 
 #img(
   image("c:media/dendro_2200_contour.png", width: 70%),
-  caption: [m2200の積分強度図の解析結果],
+  caption: [1.7 Myrの積分強度図の解析結果],
 ) <img:dendro_2200_contour>
 
 #img(
   image("c:media/dendro_2800_contour.png", width: 70%),
-  caption: [m2800の積分強度図の解析結果],
+  caption: [2.2 Myrの積分強度図の解析結果],
 ) <img:dendro_2800_contour>\
 
 == 三次元散布図の解析結果
@@ -254,22 +254,22 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
 
 #img(
   image("c:media/dendro3D_400_contour.png", width: 70%),
-  caption: [m400の三次元散布図の解析結果],
+  caption: [0.57 Myrの三次元散布図の解析結果],
 ) <img:dendro3D_400_contour>
 
 #img(
   image("c:media/dendro3D_1000_contour.png", width: 70%),
-  caption: [m1000の三次元散布図の解析結果],
+  caption: [1.1 Myrの三次元散布図の解析結果],
 ) <img:dendro3D_1000_contour>
 
 #img(
   image("c:media/dendro3D_2200_contour.png", width: 70%),
-  caption: [m2200の三次元散布図の解析結果],
+  caption: [1.7 Myrの三次元散布図の解析結果],
 ) <img:dendro3D_2200_contour>
 
 #img(
   image("c:media/dendro3D_2800_contour.png", width: 70%),
-  caption: [m2800の三次元散布図の解析結果],
+  caption: [2.2 Myrの三次元散布図の解析結果],
 ) <img:dendro3D_2800_contour>\
 
 
@@ -304,22 +304,22 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
 
 #img(
   image("c:media/fwhm_400_branch_0.png", width: 70%),
-  caption: [m400のトランクの速度スペクトルとフィッテイング結果],
+  caption: [0.57 Myrのトランクの速度スペクトルとフィッテイング結果],
 ) <img:fwhm_400>
 
 #img(
   image("c:media/fwhm_1000_branch_2.png", width: 70%),
-  caption: [m1000のトランクの速度スペクトルとフィッテイング結果],
+  caption: [1.1 Myrのトランクの速度スペクトルとフィッテイング結果],
 ) <img:fwhm_1000>
 
 #img(
   image("c:media/fwhm_2200_branch_1.png", width: 70%),
-  caption: [m2200のトランクの速度スペクトルとフィッテイング結果],
+  caption: [1.7 Myrのトランクの速度スペクトルとフィッテイング結果],
 ) <img:fwhm_2200>
 
 #img(
   image("c:media/fwhm_2800_branch_0.png", width: 70%),
-  caption: [m2800のトランクの速度スペクトルとフィッテイング結果],
+  caption: [2.2 Myrのトランクの速度スペクトルとフィッテイング結果],
 ) <img:fwhm_2800>\
 
 算出したビリアルパラメータの推移を@img:alpha_gvir_trunk_2D に示す．@img:alpha_gvir_trunk_2D より，ビリアルパラメータは徐々に減少しながら$alpha_("Gvir") = 1$に漸近していることがわかる．よってトランクは徐々にビリアル平衡に向かっていると考えられる．この事実はトランクの収縮スピードが減少している事実に対応する．
@@ -338,12 +338,12 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
 @img:mass_hist_2D より，質量についても各構造において同様の傾向がみられる．
 
 #img(
-  image("c:media/size_hist_2D_paper.png", width: 100%),
+  image("c:media/size_hist_2D.png", width: 100%),
   caption: [積分強度図上の各構造のサイズのヒストグラム],
 ) <img:size_hist_2D>
 
 #img(
-  image("c:media/mass_hist_2D_paper.png", width: 100%),
+  image("c:media/mass_hist_2D.png", width: 100%),
   caption: [積分強度図上の各構造の質量のヒストグラム],
 ) <img:mass_hist_2D>
 
@@ -351,29 +351,29 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
 
 三次元散布図の解析で得られた各構造についても，サイズと質量のヒストグラムを作成した．結果を@img:size_hist_3D_，@img:mass_hist_3D に示す．青のビンがリーフの個数，オレンジのビンがブランチの個数を表している．なおサイズについては，視線速度，位置，位置の三次元空間における体積であることを考慮し$"pc"^2$ #unit("km/s")という単位を用いている．
 
-@img:size_hist_3D_ より，積分強度図上の構造と同様，三次元散布図上の各構造においてもサイズの増加と減少が繰り返されていると考えられる．一方でm2200やm2800において，$1000$ $"pc"^2$ #unit("km/s")を上回るサイズのリーフやブランチが生じていることがわかる．特にm2800における最大のブランチがリーフを覆うような巨大な構造となっていることが，@img:dendro3D_2800_contour から定性的にも確認できる．
+@img:size_hist_3D_ より，積分強度図上の構造と同様，三次元散布図上の各構造においてもサイズの増加と減少が繰り返されていると考えられる．一方で1.7 Myrや2.2 Myrにおいて，$1000$ $"pc"^2$ #unit("km/s")を上回るサイズのリーフやブランチが生じていることがわかる．特に2.2 Myrにおける最大のブランチがリーフを覆うような巨大な構造となっていることが，@img:dendro3D_2800_contour から定性的にも確認できる．
 
 @img:mass_hist_3D より，質量についてもサイズと同様の傾向がみられる．
 
-m2200やm2800において巨大な構造が形成される原因についてはまだ明らかでない．しかしこの二つの時点ではリーフの個数が減少していることから，m400やm1000において存在している構造が合体や散逸を起こすことで，その時点よりもサイズや質量の大きい構造が形成される可能性が考えられる．
+1.7 Myrや2.2 Myrにおいて巨大な構造が形成される原因についてはまだ明らかでない．しかしこの二つの時点ではリーフの個数が減少していることから，0.57 Myrや1.1 Myrにおいて存在している構造が合体や散逸を起こすことで，その時点よりもサイズや質量の大きい構造が形成される可能性が考えられる．
 
 #img(
-  image("c:media/size_hist_3D_paper.png", width: 100%),
+  image("c:media/size_hist_3D.png", width: 100%),
   caption: [三次元散布図上の各構造のサイズのヒストグラム],
 ) <img:size_hist_3D_>
 
 #img(
-  image("c:media/mass_hist_3D_paper.png", width: 100%),
+  image("c:media/mass_hist_3D.png", width: 100%),
   caption: [三次元散布図上の各構造の質量のヒストグラム],
 ) <img:mass_hist_3D>
 
 == mass functionとの比較
 
-Dendrogramによる解析結果やその解釈についての正確性を確認するため，解析対象のデータについて各時点におけるmass functionを作成した．結果を@img:mass_function_ に示す．青線がm400，黄色線がm1000，緑線がm2200，赤線がm2800における結果である．
+Dendrogramによる解析結果やその解釈についての正確性を確認するため，解析対象のデータについて各時点におけるmass functionを作成した．結果を@img:mass_function_ に示す．青線が0.57 Myr，黄色線が1.1 Myr，緑線が1.7 Myr，赤線が2.2 Myrにおける結果である．
 
 mass functionから，時間発展に伴い質量の大きい部分と小さい部分が増加していることがわかる．これは分子雲においてフィラメント構造が発展しているためと考えられる．この事実は@trunk_mass で述べたように，トランク内部でもみられる傾向である．
 
-一方でフィラメント構造が発展するスピードについては徐々に減少していることがわかる．特にm2200からm2800においては質量の最大値がほぼ変わらないなど傾向が顕著である．これは分子雲が全体としてビリアル平衡に近づいているためと考えられる．この事実は@trunk_vir においてみられたようなビリアルパラメータの変化に対応する．
+一方でフィラメント構造が発展するスピードについては徐々に減少していることがわかる．特に1.7 Myrから2.2 Myrにおいては質量の最大値がほぼ変わらないなど傾向が顕著である．これは分子雲が全体としてビリアル平衡に近づいているためと考えられる．この事実は@trunk_vir においてみられたようなビリアルパラメータの変化に対応する．
 
 #img(
   image("c:media/mass_function.png", width: 70%),
