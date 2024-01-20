@@ -287,12 +287,32 @@ Dendrogramを実行する際は，以下の3つのパラメータを設定する
   caption: [積分強度図上のトランクのサイズ変化],
 ) <img:trunk_size_2D>\
 
-@img:trunk_mass_2D はトランクの質量変化のグラフである．グラフから，トランクの質量は徐々に減少していることがわかる．この事実は，@img:dendro_400_contour から@img:dendro_2800_contour で見られるような，トランクの内部におけるフィラメント構造の発達を示している．フィラメント構造の発達により質量の粗密が増大することで，Dendrogramの最小値を上回るような質量を持つ部分が減少するため，質量の数値に減少傾向がみられたと考えられる．
+@img:trunk_mass_2D はトランクの質量変化のグラフである．グラフから，トランクの質量は徐々に減少していることがわかる．この事実は，@img:dendro_400_contour から@img:dendro_2800_contour で定性的に見られるような，トランクの内部におけるフィラメント構造の発達を示している．@img:trunk_int_400 から@img:trunk_int_2800 に，それぞれの時刻におけるトランク内部の質量分布を示す．これらの分布から，トランク内部では時間発展に伴い質量の小さい部分と大きい部分がそれぞれ増加していることがわかる．これはフィラメント構造の発達を定量的に示している．フィラメント構造の発達により質量の粗密が増大し，特に質量の小さい部分の増加が強く寄与することで，トランクの質量に減少傾向がみられたと考えられる．
 
 #img(
   image("c:media/trunk_mass_2D.png", width: 70%),
   caption: [積分強度図上のトランクの質量変化],
-) <img:trunk_mass_2D>\
+) <img:trunk_mass_2D>
+
+#img(
+  image("c:media/trunk_int_400.png", width: 70%),
+  caption: [0.57 Myrにおけるトランク内部の質量分布],
+) <img:trunk_int_400>
+
+#img(
+  image("c:media/trunk_int_1000.png", width: 70%),
+  caption: [1.1 Myrにおけるトランク内部の質量分布],
+) <img:trunk_int_1000>
+
+#img(
+  image("c:media/trunk_int_2200.png", width: 70%),
+  caption: [1.7 Myrにおけるトランク内部の質量分布],
+) <img:trunk_int_2200>
+
+#img(
+  image("c:media/trunk_int_2800.png", width: 70%),
+  caption: [2.2 Myrにおけるトランク内部の質量分布],
+) <img:trunk_int_2800>\
 
 ビリアルパラメータは@eq:vir を用いて算出した．なお$R$はトランクの面積から，トランクを円形と考えることで導出した．また$sigma$はトランク内部の速度スペクトルを足し合わせて最小二乗法を用いてガウスフィッテイングを行い，フィッティング結果の半値幅とした．@img:dv_trunk_2D に速度分散$sigma$の変化を示す． 
 
