@@ -63,19 +63,24 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 分子雲コアに代表されるような星形成領域の観測は，これまで盛んにおこなわれてきた．
 
-例えばMiura et al.(2012)では，近傍銀河M33のCO観測によって71個の巨大分子雲(GMC)を同定し，それらを進化段階に応じて4つのカテゴリーに分類している．ただしこの進化段階のカテゴリーはGMCと，M33内の若い星の集団(YSG)，HII領域の，観測時点での位置関係によって解釈されている．例として，大規模な星形成が行われる前の段階であるType Aカテゴリーに属するM33 GMC-60を@img:gmc_typea に，現在大規模な星形成が行われている段階であるType Cカテゴリーに属するM33 GMC-1を@img:gmc_typec に示す．GMC-60と比べ，GMC-1はより階層的なCO積分強度図を持っていることがわかる．
+例えばTokuda, et al. 2020やKondo, et al. 2021では，M33北部に存在するGMC-8，NGC 604，GMC-16の3つの分子雲をALMAにより観測して構造や質量を比較している．@img:gmc_example にM33北部の$isotope("CO",a:12) (J=2-1)$積分強度図とH$alpha$輝線を示す．図中でこれら3つの分子雲の位置が同定されている．Tokuda, et al. 2020では，HII領域を伴うGMC-16が@img:gmc-16 に示すような大規模なフィラメント構造を持つことが示されている．一方でKondo, et al. 2021では，星形成が不活発なGMC-8が@img:gmc-8 に示すような円形に広がった構造を持つことなどが示されている．
+
+#img(
+  image("gmc_example.png", width: 100%),
+  caption: [(a)M33北部の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)M33北部のH$alpha$輝線．(Kondo, et al. 2021)],
+) <img:gmc_example>
+
+#img(
+  image("gmc-16.png", width: 100%),
+  caption: [(a)M33 GMC-16の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)同分子雲の$isotope("CO",a:13) (J=2-1)$積分強度図．(Tokuda, et al. 2020)],
+) <img:gmc-16>
+
+#img(
+  image("gmc-8.png", width: 100%),
+  caption: [(a)M33 GMC-8の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)同分子雲の$isotope("CO",a:13) (J=2-1)$積分強度図．(Kondo, et al. 2021)],
+) <img:gmc-8>\
 
 このように，観測を用いた研究では複数の分子雲を比較してその進化段階を相対的に評価することとなる．反対に，単一の分子雲の観測データのみからでは，構造進化を理解するのは困難である．分子雲が収縮し星となるまでに要する時間は#num(1,e:5,print-unity-mantissa:false)年から#num(1,e:6,print-unity-mantissa:false)年であり，観測データはその長い時間における一時点の情報に過ぎないからである．
-
-#img(
-  image("gmc_typea.png", width: 70%),
-  caption: [Type Aカテゴリーに属するM33 GMC-60．(a)CO(J = 3-2)，(b)CO(J = 1-0)積分強度図，(c)CO(J = 3-2)/CO(J = 1-0)比，(d)H$alpha$のマップを示す．色付きのコントアは若い星の面密度を表す．(Miura et al.，2012)],
-) <img:gmc_typea>
-
-#img(
-  image("gmc_typec.png", width: 70%),
-  caption: [Type Cカテゴリーに属するM33 GMC-1．(Miura et al.，2012)],
-) <img:gmc_typec>
 
 === シミュレーションを用いた研究
 
@@ -491,6 +496,8 @@ Fukushima, H., et al. 2020, MNRAS, 497, 3830
 Hiroshi, K., et al. 2021, ApJ, 912, 66
 
 Kim, J. G., et al. 2018, ApJ, 859, 68
+
+Kondo et al. 
 
 Rie, E. Miura, et al. 2012, ApJ, 761, 37
 
