@@ -65,6 +65,9 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 例えばTokuda, et al. 2020やKondo, et al. 2021では，M33北部に存在するGMC-8，NGC 604，GMC-16の3つの分子雲をALMAにより観測して構造や質量を比較している．@img:gmc_example にM33北部の$isotope("CO",a:12) (J=2-1)$積分強度図とH$alpha$輝線を示す．図中でこれら3つの分子雲の位置が同定されている．Tokuda, et al. 2020では，HII領域を伴うGMC-16が@img:gmc-16 に示すような大規模なフィラメント構造を持つことが示されている．一方でKondo, et al. 2021では，星形成が不活発なGMC-8が@img:gmc-8 に示すような円形に広がった構造を持つことなどが示されている．
 
+このように，観測を用いた研究では複数の分子雲を比較してその進化段階を相対的に評価することとなる．反対に，単一の分子雲の観測データのみからでは，構造進化を理解するのは困難である．分子雲が収縮し星となるまでに要する時間は#num(1,e:5,print-unity-mantissa:false)年から#num(1,e:6,print-unity-mantissa:false)年であり，観測データはその長い時間における一時点の情報に過ぎないからである．
+
+
 #img(
   image("gmc_example.png", width: 100%),
   caption: [(a)M33北部の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)M33北部のH$alpha$輝線．(Kondo, et al. 2021)],
@@ -80,7 +83,6 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
   caption: [(a)M33 GMC-8の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)同分子雲の$isotope("CO",a:13) (J=2-1)$積分強度図．(Kondo, et al. 2021)],
 ) <img:gmc-8>\
 
-このように，観測を用いた研究では複数の分子雲を比較してその進化段階を相対的に評価することとなる．反対に，単一の分子雲の観測データのみからでは，構造進化を理解するのは困難である．分子雲が収縮し星となるまでに要する時間は#num(1,e:5,print-unity-mantissa:false)年から#num(1,e:6,print-unity-mantissa:false)年であり，観測データはその長い時間における一時点の情報に過ぎないからである．
 
 === シミュレーションを用いた研究
 
