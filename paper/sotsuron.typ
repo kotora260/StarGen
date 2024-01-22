@@ -70,7 +70,7 @@ $ alpha_("Gvir") = (5sigma^2R) / (3G M) $ <eq:vir>
 
 #img(
   image("gmc_example.png", width: 100%),
-  caption: [(a)M33北部の$isotope("CO",a:12) (J=2-1)$積分強度図．(b)M33北部のH$alpha$輝線．(Kondo, et al. 2021)],
+  caption: [(a)M33北部の$isotope("CO",a:12) (J=2-1)$積分強度図と分子雲．(b)同領域のH$alpha$輝線．(Kondo, et al. 2021)],
 ) <img:gmc_example>
 
 #img(
@@ -493,15 +493,17 @@ mass functionから，時間発展に伴い質量の大きい部分と小さい�
 
 Federrath, C., et al. 2012, ApJ, 761, 156
 
-Fukushima, H., et al. 2020, MNRAS, 497, 3830
+//Fukushima, H., et al. 2020, MNRAS, 497, 3830
 
-Hiroshi, K., et al. 2021, ApJ, 912, 66
+//Hiroshi, K., et al. 2021, ApJ, 912, 66
 
-Kim, J. G., et al. 2018, ApJ, 859, 68
+//Kim, J. G., et al. 2018, ApJ, 859, 68
 
-Kondo et al. 
+Kondo, H., et al. 2021, ApJ, 912, 66
 
-Rie, E. Miura, et al. 2012, ApJ, 761, 37
+//Rie, E. Miura, et al. 2012, ApJ, 761, 37
+
+Tokuda, K., et al. 2020, ApJ, 896, 36 
 
 Astronomical Dendrograms in Python, https://dendrograms.readthedocs.io/en/stable/
 
