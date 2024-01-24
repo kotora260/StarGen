@@ -1,9 +1,9 @@
-#set text(font: (
+#set text(10pt, font: (
   "New Computer Modern Math",
   "IPAexMincho", 
   ))
 
-#align(center, text(17pt)[
+#align(center, text(14pt)[
   分子雲の構造進化の理解に向けた自己重力流体シミュレーションの解析
 ])
 
@@ -19,7 +19,7 @@
 #show: rest => columns(2, rest)
 
 #show heading: it => [
-  #set text(11pt, font: "IPAexGothic")
+  #set text(10pt, font: "IPAexGothic")
   #block(smallcaps(it.body))
 ]
 
@@ -34,7 +34,7 @@
 }
 
 #show figure.caption: it => [
-  #set text(8pt, font: "IPAexGothic")
+  #set text(10pt, font: "IPAexGothic")
   図#it.counter.display(it.numbering):
   #it.body
 ]
