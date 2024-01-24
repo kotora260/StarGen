@@ -401,7 +401,7 @@
   mentor: "",
   mentor-post: "",
   class: "修士",
-  date: (datetime.today().year(), datetime.today().month(), datetime.today().day()),
+  date: (datetime.today().year()-2018, datetime.today().month(), datetime.today().day()),
 
   paper-type: "論文",
 
@@ -543,23 +543,29 @@
     )[
       #title
     ]
-    #v(50pt)
+    #v(200pt)
     #text(
       size: 16pt,
     )[
-      #id #author
+      令和#date.at(0) 年 #date.at(1) 月 //#date.at(2) 日 提出
+    ]
+
+    #text(
+      size: 16pt,
+    )[
+      #id
+    ]
+
+     #text(
+      size: 16pt,
+    )[
+      #author
     ]
 
     #text(
       size: 16pt,
     )[
       指導教員 #mentor #mentor-post
-    ]
-    #v(40pt)
-    #text(
-      size: 16pt,
-    )[
-      #date.at(0) 年 #date.at(1) 月 #date.at(2) 日 //提出
     ]
     #pagebreak()
   ]
