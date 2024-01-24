@@ -18,9 +18,11 @@
 
 #show: rest => columns(2, rest)
 
+#set heading(numbering: "1．")
 #show heading: it => [
   #set text(10pt, font: "IPAexGothic")
-  #block(smallcaps(it.body))
+  //#counter(heading).display()
+  #block(counter(heading).display() + it.body)
 ]
 
 #show par: set block(spacing: 0.65em)
