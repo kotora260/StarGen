@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="2.0">
+  <Domain>
+    <Grid Name="Structured Grid" GridType="Uniform">
+      <Topology TopologyType="3DCORECTMesh" NumberOfElements="64 64 64"/>
+      <Geometry GeometryType="ORIGIN_DXDYDZ">
+        <DataItem Name="Origin" Dimensions="3" NumberType="Float" Precision="8" Format="XML">
+         -4.42969e+01 -4.42969e+01 -4.42969e+01 
+        </DataItem>
+        <DataItem Name="Spacing" Dimensions="3" NumberType="Float" Precision="8" Format="XML">
+         1.38428e+00 1.38428e+00 1.38428e+00 
+        </DataItem>
+      </Geometry>
+      
+      <Attribute Name="nH" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/nH
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="lognH" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/lognH
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="vx" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/vx
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="vy" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/vy
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="vz" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/vz
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yhn" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yhn
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yh2" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yh2
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yel" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yel
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yhp" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yhp
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yhm" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yhm
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yh2p" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yh2p
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="yco" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/yco
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="T" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/T
+        </DataItem>
+      </Attribute>
+      
+      <Attribute Name="Td" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions="64 64 64"  NumberType="Float" Precision="8" Format="HDF">
+          cb1000.h5:/Td
+        </DataItem>
+      </Attribute>
+      
+    </Grid>
+  </Domain>
+</Xdmf>
