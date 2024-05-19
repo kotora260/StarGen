@@ -42,5 +42,4 @@ dendro3Dの解析結果から図を作成するためのNotebook.
 [astrodendroドキュメント](https://dendrograms.readthedocs.io/en/stable/)
 
 ## 著者
-B4.北海道出身.  
-[著者Instagram](https://www.instagram.com/melan_cozmo/)
+M1.北海道出身.  
