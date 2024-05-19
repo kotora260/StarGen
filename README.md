@@ -40,6 +40,3 @@ dendro3Dの解析結果から図を作成するためのNotebook.
 ## 参考
 [天文データ解析入門](https://qiita.com/Shinji_Fujita/items/ecb869e5b6a9fa468483)  
 [astrodendroドキュメント](https://dendrograms.readthedocs.io/en/stable/)
-
-## 著者
-M1.北海道出身.  
